@@ -7,5 +7,5 @@ void AnotherClassifier::train(std::vector<DataPoint>& trainingData) {
 
 DataPoint AnotherClassifier::predict(DataPoint& queryPoint) {
 	std::cout << "{Another Classifier} predict() called, function not implemented" << std::endl;
-	return;
+	return queryPoint;
 }
