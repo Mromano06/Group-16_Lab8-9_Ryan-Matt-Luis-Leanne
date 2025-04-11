@@ -9,10 +9,8 @@
 #include "utils.h"
 #include "CleanData.h"
 
-/// @brief main implementation
-/// 
-/// @param  void
-/// @return 0
+// Group 16 - Labs8-9 - Ryan - Leanne - Matt - Luis
+// Main implementation
 
 int main(void) {
 	// Initial Startup
