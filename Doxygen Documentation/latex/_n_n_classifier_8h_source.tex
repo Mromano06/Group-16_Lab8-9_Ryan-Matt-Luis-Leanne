@@ -1,0 +1,24 @@
+\doxysection{NNClassifier.\+h}
+\hypertarget{_n_n_classifier_8h_source}{}\label{_n_n_classifier_8h_source}\index{C:/Users/Mroma/source/repos/Group-\/16\_Lab8-\/9\_Ryan-\/Matt-\/Luis-\/Leanne/Machine Learning Algorithm/NNClassifier.h@{C:/Users/Mroma/source/repos/Group-\/16\_Lab8-\/9\_Ryan-\/Matt-\/Luis-\/Leanne/Machine Learning Algorithm/NNClassifier.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Classifier.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}DataPoint.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_classifier}{Classifier}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_a8cc5b8edafb9d8cea8ea69937b9f65e2}{train}}(std::vector<DataPoint>\&\ trainingData);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_data_point}{DataPoint}}\ \mbox{\hyperlink{class_n_n_classifier_ac58764d85b99d6a543705e784769b17e}{predict}}(\mbox{\hyperlink{class_data_point}{DataPoint}}\&\ queryPoint);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ std::vector<DataPoint>\ trainingData\_;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{double}\ euclideanDistance(\mbox{\hyperlink{class_data_point}{DataPoint}}\&\ p1,\ \mbox{\hyperlink{class_data_point}{DataPoint}}\&\ p2);}
+\DoxyCodeLine{00046\ \};}
+
+\end{DoxyCode}

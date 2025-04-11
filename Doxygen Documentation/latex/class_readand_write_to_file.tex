@@ -1,0 +1,103 @@
+\doxysection{Readand\+Write\+To\+File Class Reference}
+\hypertarget{class_readand_write_to_file}{}\label{class_readand_write_to_file}\index{ReadandWriteToFile@{ReadandWriteToFile}}
+
+
+Class for reading and writing \doxylink{class_data_point}{Data\+Point} objects to and from files.  
+
+
+
+
+{\ttfamily \#include $<$Readand\+Write\+To\+File.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \mbox{\hyperlink{class_readand_write_to_file_a36f3dcd74fbf5392baef10c4b611c42a}{read}} ()
+\begin{DoxyCompactList}\small\item\em Reads \doxylink{class_data_point}{Data\+Point} objects from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_readand_write_to_file_a0b12ff5f8553438bceffcb9b55840dcb}{write}} (std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Writes \doxylink{class_data_point}{Data\+Point} objects to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_readand_write_to_file_a4f780044f4e5c1a96c56951b29b85b28}{set}} (int f)
+\begin{DoxyCompactList}\small\item\em Sets the static member variable \textquotesingle{}file\+Type\textquotesingle{} to the given value. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_readand_write_to_file_a4dac06c25dff9331f02895323f4fbe16}{get}} ()
+\begin{DoxyCompactList}\small\item\em Returns the value of the static member variable \textquotesingle{}file\+Type\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for reading and writing \doxylink{class_data_point}{Data\+Point} objects to and from files. 
+
+This class inherits from \doxylink{class_data_percistance}{Data\+Percistance} and provides implementations for reading and writing \doxylink{class_data_point}{Data\+Point} objects to and from files. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_readand_write_to_file_a4dac06c25dff9331f02895323f4fbe16}\index{ReadandWriteToFile@{ReadandWriteToFile}!get@{get}}
+\index{get@{get}!ReadandWriteToFile@{ReadandWriteToFile}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_readand_write_to_file_a4dac06c25dff9331f02895323f4fbe16} 
+int Readand\+Write\+To\+File\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the value of the static member variable \textquotesingle{}file\+Type\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_readand_write_to_file_a36f3dcd74fbf5392baef10c4b611c42a}\index{ReadandWriteToFile@{ReadandWriteToFile}!read@{read}}
+\index{read@{read}!ReadandWriteToFile@{ReadandWriteToFile}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_readand_write_to_file_a36f3dcd74fbf5392baef10c4b611c42a} 
+std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ Readand\+Write\+To\+File\+::read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reads \doxylink{class_data_point}{Data\+Point} objects from a file. 
+
+Prompts the user to enter the name of the file to read from and sets the file type based on user input Recursively prompts the user to enter the correct filename if the file is not found. Reads \doxylink{class_data_point}{Data\+Point} objects from the specified file and returns them as a vector. \begin{DoxyReturn}{Returns}
+A vector of \doxylink{class_data_point}{Data\+Point} objects read from the file. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_data_percistance_a7ad4335f6694db9bbbbb1168a4dcde06}{Data\+Percistance}}.
+
+\Hypertarget{class_readand_write_to_file_a4f780044f4e5c1a96c56951b29b85b28}\index{ReadandWriteToFile@{ReadandWriteToFile}!set@{set}}
+\index{set@{set}!ReadandWriteToFile@{ReadandWriteToFile}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_readand_write_to_file_a4f780044f4e5c1a96c56951b29b85b28} 
+void Readand\+Write\+To\+File\+::set (\begin{DoxyParamCaption}\item[{int}]{f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the static member variable \textquotesingle{}file\+Type\textquotesingle{} to the given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_readand_write_to_file_a0b12ff5f8553438bceffcb9b55840dcb}\index{ReadandWriteToFile@{ReadandWriteToFile}!write@{write}}
+\index{write@{write}!ReadandWriteToFile@{ReadandWriteToFile}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_readand_write_to_file_a0b12ff5f8553438bceffcb9b55840dcb} 
+void Readand\+Write\+To\+File\+::write (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes \doxylink{class_data_point}{Data\+Point} objects to a file. 
+
+Writes the given vector of \doxylink{class_data_point}{Data\+Point} objects to a file named "{}result.\+txt"{}. Opens file for writing and writes each \doxylink{class_data_point}{Data\+Point} to the file using an overloaded \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator 
+\begin{DoxyParams}{Parameters}
+{\em data} & A reference to a vector of \doxylink{class_data_point}{Data\+Point} objects to be written to the file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_data_percistance_a1a2645939abae9a5ebe5c0e7a6dfbb27}{Data\+Percistance}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mroma/source/repos/\+Group-\/16\+\_\+\+Lab8-\/9\+\_\+\+Ryan-\/\+Matt-\/\+Luis-\/\+Leanne/\+Machine Learning Algorithm/Readand\+Write\+To\+File.\+h\item 
+C\+:/\+Users/\+Mroma/source/repos/\+Group-\/16\+\_\+\+Lab8-\/9\+\_\+\+Ryan-\/\+Matt-\/\+Luis-\/\+Leanne/\+Machine Learning Algorithm/Readand\+Write\+To\+File.\+cpp\end{DoxyCompactItemize}

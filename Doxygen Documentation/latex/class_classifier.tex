@@ -1,0 +1,71 @@
+\doxysection{Classifier Class Reference}
+\hypertarget{class_classifier}{}\label{class_classifier}\index{Classifier@{Classifier}}
+
+
+CLassifier interface.  
+
+
+
+
+{\ttfamily \#include $<$Classifier.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_classifier_a7018813d8faff3a6253de1757f4927da}{train}} (std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \&training\+Data)
+\begin{DoxyCompactList}\small\item\em virtual function train \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_data_point}{Data\+Point}} \mbox{\hyperlink{class_classifier_ac96b4cd0a65e98e1b84661209ec055f9}{predict}} (\mbox{\hyperlink{class_data_point}{Data\+Point}} \&query\+Point)
+\begin{DoxyCompactList}\small\item\em virtual function predict \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+CLassifier interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_classifier_ac96b4cd0a65e98e1b84661209ec055f9}\index{Classifier@{Classifier}!predict@{predict}}
+\index{predict@{predict}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily \label{class_classifier_ac96b4cd0a65e98e1b84661209ec055f9} 
+\mbox{\hyperlink{class_data_point}{Data\+Point}} Classifier\+::predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data_point}{Data\+Point}} \&}]{query\+Point}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual function predict 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_data_point}{Data\+Point}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_data_point}{Data\+Point} with orientation 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_another_classifier_a626b9b0a460228c0fc404fb6910c3051}{Another\+Classifier}}, and \mbox{\hyperlink{class_n_n_classifier_ac58764d85b99d6a543705e784769b17e}{NNClassifier}}.
+
+\Hypertarget{class_classifier_a7018813d8faff3a6253de1757f4927da}\index{Classifier@{Classifier}!train@{train}}
+\index{train@{train}!Classifier@{Classifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily \label{class_classifier_a7018813d8faff3a6253de1757f4927da} 
+void Classifier\+::train (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \&}]{training\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual function train 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_data_point}{Data\+Point}} & vector \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_another_classifier_a2e048e6e26612827be26a9de21c6c607}{Another\+Classifier}}, and \mbox{\hyperlink{class_n_n_classifier_a8cc5b8edafb9d8cea8ea69937b9f65e2}{NNClassifier}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mroma/source/repos/\+Group-\/16\+\_\+\+Lab8-\/9\+\_\+\+Ryan-\/\+Matt-\/\+Luis-\/\+Leanne/\+Machine Learning Algorithm/Classifier.\+h\item 
+C\+:/\+Users/\+Mroma/source/repos/\+Group-\/16\+\_\+\+Lab8-\/9\+\_\+\+Ryan-\/\+Matt-\/\+Luis-\/\+Leanne/\+Machine Learning Algorithm/Classifier.\+cpp\end{DoxyCompactItemize}

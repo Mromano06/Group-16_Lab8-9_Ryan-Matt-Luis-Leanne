@@ -1,0 +1,77 @@
+\doxysection{NNClassifier Class Reference}
+\hypertarget{class_n_n_classifier}{}\label{class_n_n_classifier}\index{NNClassifier@{NNClassifier}}
+
+
+Nearest Neighbor \doxylink{class_classifier}{Classifier} (not Neural Network)  
+
+
+
+
+{\ttfamily \#include $<$NNClassifier.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_n_classifier_a8cc5b8edafb9d8cea8ea69937b9f65e2}{train}} (std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \&training\+Data)
+\begin{DoxyCompactList}\small\item\em Train the classifier with the given training data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_point}{Data\+Point}} \mbox{\hyperlink{class_n_n_classifier_ac58764d85b99d6a543705e784769b17e}{predict}} (\mbox{\hyperlink{class_data_point}{Data\+Point}} \&query\+Point)
+\begin{DoxyCompactList}\small\item\em Predict the class of the query point by finding its nearest neighbor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Nearest Neighbor \doxylink{class_classifier}{Classifier} (not Neural Network) 
+
+The \doxylink{class_n_n_classifier}{NNClassifier} class implements a simple nearest neighbor classifier It provides methods to train the classifier with training data and predict the class of a query point 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_n_n_classifier_ac58764d85b99d6a543705e784769b17e}\index{NNClassifier@{NNClassifier}!predict@{predict}}
+\index{predict@{predict}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily \label{class_n_n_classifier_ac58764d85b99d6a543705e784769b17e} 
+\mbox{\hyperlink{class_data_point}{Data\+Point}} NNClassifier\+::predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data_point}{Data\+Point}} \&}]{query\+Point}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Predict the class of the query point by finding its nearest neighbor. 
+
+This function finds the nearest neighbor of the query point in the training data, updates the query point\textquotesingle{}s ID to match the nearest neighbor\textquotesingle{}s ID, and returns the updated query point
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Point} & A \doxylink{class_data_point}{Data\+Point} object to be predicted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_data_point}{Data\+Point} The updated query point with the predicted ID from it\textquotesingle{}s nearest neighbor 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_classifier_ac96b4cd0a65e98e1b84661209ec055f9}{Classifier}}.
+
+\Hypertarget{class_n_n_classifier_a8cc5b8edafb9d8cea8ea69937b9f65e2}\index{NNClassifier@{NNClassifier}!train@{train}}
+\index{train@{train}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily \label{class_n_n_classifier_a8cc5b8edafb9d8cea8ea69937b9f65e2} 
+void NNClassifier\+::train (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_data_point}{Data\+Point}} $>$ \&}]{training\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Train the classifier with the given training data. 
+
+This function stores the provided training data in the classifier for future predictions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em training\+Data} & A vector of \doxylink{class_data_point}{Data\+Point} objects representing the training data \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_classifier_a7018813d8faff3a6253de1757f4927da}{Classifier}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mroma/source/repos/\+Group-\/16\+\_\+\+Lab8-\/9\+\_\+\+Ryan-\/\+Matt-\/\+Luis-\/\+Leanne/\+Machine Learning Algorithm/NNClassifier.\+h\item 
+C\+:/\+Users/\+Mroma/source/repos/\+Group-\/16\+\_\+\+Lab8-\/9\+\_\+\+Ryan-\/\+Matt-\/\+Luis-\/\+Leanne/\+Machine Learning Algorithm/NNClassifier.\+cpp\end{DoxyCompactItemize}

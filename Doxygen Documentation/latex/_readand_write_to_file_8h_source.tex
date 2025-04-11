@@ -1,0 +1,27 @@
+\doxysection{Readand\+Write\+To\+File.\+h}
+\hypertarget{_readand_write_to_file_8h_source}{}\label{_readand_write_to_file_8h_source}\index{C:/Users/Mroma/source/repos/Group-\/16\_Lab8-\/9\_Ryan-\/Matt-\/Luis-\/Leanne/Machine Learning Algorithm/ReadandWriteToFile.h@{C:/Users/Mroma/source/repos/Group-\/16\_Lab8-\/9\_Ryan-\/Matt-\/Luis-\/Leanne/Machine Learning Algorithm/ReadandWriteToFile.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}DataPercistance.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_readand_write_to_file}{ReadandWriteToFile}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data_percistance}{DataPercistance}}\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ fileType;\ \ \ \textcolor{comment}{//\ 0\ for\ training,\ 1\ for\ testing}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_readand_write_to_file_a4f780044f4e5c1a96c56951b29b85b28}{set}}(\textcolor{keywordtype}{int}\ f);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_readand_write_to_file_a4dac06c25dff9331f02895323f4fbe16}{get}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00031\ \ \ \ \ std::vector<DataPoint>\ \mbox{\hyperlink{class_readand_write_to_file_a36f3dcd74fbf5392baef10c4b611c42a}{read}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_readand_write_to_file_a0b12ff5f8553438bceffcb9b55840dcb}{write}}(std::vector<DataPoint>\&\ data);}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+
+\end{DoxyCode}

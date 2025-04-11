@@ -1,0 +1,32 @@
+\doxysection{Data\+Point.\+h}
+\hypertarget{_data_point_8h_source}{}\label{_data_point_8h_source}\index{C:/Users/Mroma/source/repos/Group-\/16\_Lab8-\/9\_Ryan-\/Matt-\/Luis-\/Leanne/Machine Learning Algorithm/DataPoint.h@{C:/Users/Mroma/source/repos/Group-\/16\_Lab8-\/9\_Ryan-\/Matt-\/Luis-\/Leanne/Machine Learning Algorithm/DataPoint.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data_point}{DataPoint}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ std::vector<double>\ data;\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ -\/1;\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_point_a8eb403ab6f7bd13da92af5037ef9f5aa}{addData}}(\textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<double>\&\ \mbox{\hyperlink{class_data_point_a4f5f8715f35eff4cd7ff6efee9df87d0}{getData}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_point_a9dc048085015a89f7a4e6dfb4a0f7671}{setId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_point_a633a8af4cd749a00a9ff127bbf47b27a}{getId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ print();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ display();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{friend}\ std::ofstream\&\ \mbox{\hyperlink{class_data_point_af629aae9d40efdff70ea1d8dd8cc3d80}{operator\ <<\ }}(std::ofstream\&\ fout,\ \mbox{\hyperlink{class_data_point}{DataPoint}}\&\ d);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{friend}\ std::ifstream\&\ \mbox{\hyperlink{class_data_point_ababbd8daf009f43f5d48c5c7dc49bf81}{operator\ >>\ }}(std::ifstream\&\ fin,\ \mbox{\hyperlink{class_data_point}{DataPoint}}\&\ d);}
+\DoxyCodeLine{00056\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,148 @@
+\doxysection{Data\+Point Class Reference}
+\hypertarget{class_data_point}{}\label{class_data_point}\index{DataPoint@{DataPoint}}
+
+
+Represents a data point with a vector of double values and an identifier.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Point.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_data_point_a8eb403ab6f7bd13da92af5037ef9f5aa}{add\+Data}} (double value)
+\begin{DoxyCompactList}\small\item\em Adds a value to the data vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \& \mbox{\hyperlink{class_data_point_a4f5f8715f35eff4cd7ff6efee9df87d0}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Gets the data vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_point_a9dc048085015a89f7a4e6dfb4a0f7671}{set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Sets the identifier for the data point. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_data_point_a633a8af4cd749a00a9ff127bbf47b27a}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the identifier for the data point. \end{DoxyCompactList}\item 
+\Hypertarget{class_data_point_ae90ae9d4d56b67b2cd04379bbfaee89d}\label{class_data_point_ae90ae9d4d56b67b2cd04379bbfaee89d} 
+void {\bfseries print} ()
+\item 
+\Hypertarget{class_data_point_a62e6a04e675512a9fee61694de49c3f3}\label{class_data_point_a62e6a04e675512a9fee61694de49c3f3} 
+void {\bfseries display} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ofstream \& \mbox{\hyperlink{class_data_point_af629aae9d40efdff70ea1d8dd8cc3d80}{operator$<$$<$}} (std\+::ofstream \&fout, \mbox{\hyperlink{class_data_point}{Data\+Point}} \&d)
+\begin{DoxyCompactList}\small\item\em Overloads the stream insertion operator for output. \end{DoxyCompactList}\item 
+std\+::ifstream \& \mbox{\hyperlink{class_data_point_ababbd8daf009f43f5d48c5c7dc49bf81}{operator$>$$>$}} (std\+::ifstream \&fin, \mbox{\hyperlink{class_data_point}{Data\+Point}} \&d)
+\begin{DoxyCompactList}\small\item\em Overloads the stream extraction operator for input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a data point with a vector of double values and an identifier. 
+
+The \doxylink{class_data_point}{Data\+Point} class stores a vector of double values and an integer identifier. It provides methods to add data to the vector and retrieve the data vector. It also overloads the stream insertion and extraction operators for file I/O. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data_point_a8eb403ab6f7bd13da92af5037ef9f5aa}\index{DataPoint@{DataPoint}!addData@{addData}}
+\index{addData@{addData}!DataPoint@{DataPoint}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}}
+{\footnotesize\ttfamily \label{class_data_point_a8eb403ab6f7bd13da92af5037ef9f5aa} 
+void Data\+Point\+::add\+Data (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Adds a value to the data vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be added to the data vector. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_data_point_a4f5f8715f35eff4cd7ff6efee9df87d0}\index{DataPoint@{DataPoint}!getData@{getData}}
+\index{getData@{getData}!DataPoint@{DataPoint}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_data_point_a4f5f8715f35eff4cd7ff6efee9df87d0} 
+std\+::vector$<$ double $>$ \& Data\+Point\+::get\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the data vector. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the data vector. 
+\end{DoxyReturn}
+\Hypertarget{class_data_point_a633a8af4cd749a00a9ff127bbf47b27a}\index{DataPoint@{DataPoint}!getId@{getId}}
+\index{getId@{getId}!DataPoint@{DataPoint}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_data_point_a633a8af4cd749a00a9ff127bbf47b27a} 
+int Data\+Point\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the identifier for the data point. 
+
+\begin{DoxyReturn}{Returns}
+The identifier of the data point. 
+\end{DoxyReturn}
+\Hypertarget{class_data_point_a9dc048085015a89f7a4e6dfb4a0f7671}\index{DataPoint@{DataPoint}!setId@{setId}}
+\index{setId@{setId}!DataPoint@{DataPoint}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily \label{class_data_point_a9dc048085015a89f7a4e6dfb4a0f7671} 
+void Data\+Point\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Sets the identifier for the data point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier to be set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_data_point_af629aae9d40efdff70ea1d8dd8cc3d80}\index{DataPoint@{DataPoint}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DataPoint@{DataPoint}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_data_point_af629aae9d40efdff70ea1d8dd8cc3d80} 
+std\+::ofstream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{fout}{, }\item[{\mbox{\hyperlink{class_data_point}{Data\+Point}} \&}]{d}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the stream insertion operator for output. 
+
+Writes the \doxylink{class_data_point}{Data\+Point} to the output file Writing data vector first, followed by the id and its corresponding description 
+\begin{DoxyParams}{Parameters}
+{\em fout} & The output file stream. \\
+\hline
+{\em d} & The \doxylink{class_data_point}{Data\+Point} object to be written to the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the output file stream. 
+\end{DoxyReturn}
+\Hypertarget{class_data_point_ababbd8daf009f43f5d48c5c7dc49bf81}\index{DataPoint@{DataPoint}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!DataPoint@{DataPoint}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{class_data_point_ababbd8daf009f43f5d48c5c7dc49bf81} 
+std\+::ifstream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{fin}{, }\item[{\mbox{\hyperlink{class_data_point}{Data\+Point}} \&}]{d}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the stream extraction operator for input. 
+
+Reads values form the input file stream into a \doxylink{class_data_point}{Data\+Point} object Processes all values on the line into a temporary data vector if the file is for training, the last value is set a the id and removed from the data vector if the file is for testing, the id is set to -\/1 saves the remaining vector values to a \doxylink{class_data_point}{Data\+Point} vector 
+\begin{DoxyParams}{Parameters}
+{\em fin} & The input file stream. \\
+\hline
+{\em d} & The \doxylink{class_data_point}{Data\+Point} object to be read from the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the input file stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mroma/source/repos/\+Group-\/16\+\_\+\+Lab8-\/9\+\_\+\+Ryan-\/\+Matt-\/\+Luis-\/\+Leanne/\+Machine Learning Algorithm/Data\+Point.\+h\item 
+C\+:/\+Users/\+Mroma/source/repos/\+Group-\/16\+\_\+\+Lab8-\/9\+\_\+\+Ryan-\/\+Matt-\/\+Luis-\/\+Leanne/\+Machine Learning Algorithm/Data\+Point.\+cpp\end{DoxyCompactItemize}
