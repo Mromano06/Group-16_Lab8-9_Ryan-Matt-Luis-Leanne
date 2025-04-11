@@ -7,6 +7,7 @@
 #include "NNClassifier.h"
 #include "Menus.h"
 #include "utils.h"
+#include "CleanData.h"
 
 /// @brief 
 /// 
@@ -60,9 +61,11 @@ int main(void) {
 	
 
 	// Read Training Data from file and train classifier
+	CleanData::get();
 	DataPercistance* dataHandler = new ReadandWriteToFile();
 	ReadandWriteToFile::set(0); //set file Type as Training File
 	std::vector<DataPoint> trainingData = dataHandler->read();
+	trainingData = CleanData::clean(trainingData);
 	classifier->train(trainingData);
 	// prompt user to provide parameters for cleaning data (ex. values can only be between -1 and 1); **Not being implemented
 
@@ -124,6 +127,7 @@ int main(void) {
 		case 2:
 			// Ask for file name of Unknown Data then read and predict values for each DataPoint
 			unknownData = dataHandler->read();
+			unknownData = CleanData::clean(unknownData);
 			for (DataPoint data : unknownData) {	// for every DataPoint in vector of DataPoints
 				dataPrediction.push_back(classifier->predict(data)); //push predicted DataPoint into dataPrediction vector
 			}
