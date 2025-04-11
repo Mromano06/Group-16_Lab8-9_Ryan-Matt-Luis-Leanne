@@ -3,21 +3,19 @@
 #include "DataPoint.h"
 //#include <vector>
 
-
-/// @brief 
+/// @class DataPersistance
+/// @brief Abstract class for reading/writing data
 ///
 /// 
 class DataPercistance
 {	
 public:
-	/// @brief 
-	///
-	/// 
+	/// @brief Virtual read function
+	/// @param DataPoint vector
 	virtual std::vector<DataPoint> read();
 
-	/// @brief 
-	///
-	/// 
+	/// @brief Virtual write function
+	/// @param DataPoint vector
 	virtual void write(std::vector<DataPoint>& data);
 };
 

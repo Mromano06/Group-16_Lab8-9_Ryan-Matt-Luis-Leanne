@@ -2,22 +2,20 @@
 
 #include "DataPoint.h"
 
-/// @brief 
-///
-/// 
+/// @class Classifier
+/// @brief CLassifier interface 
 class Classifier 
 {
 public:
-	/// @brief 
+	/// @brief virtual function train
 	/// 
-	/// @param  
-	/// @return 
+	/// @param  DataPoint vector
 	virtual void train(std::vector<DataPoint>& trainingData);
 
-	/// @brief 
+	/// @brief virtual function predict
 	/// 
-	/// @param  
-	/// @return
+	/// @param  DataPoint
+	/// @return DataPoint with orientation
 	virtual DataPoint predict(DataPoint& queryPoint);
 };
 

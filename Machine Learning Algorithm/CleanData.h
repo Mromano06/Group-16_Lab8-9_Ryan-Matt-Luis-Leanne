@@ -2,7 +2,8 @@
 #include "DataPoint.h"
 #include <stdbool.h>
 
-/// @brief 
+/// @class CleanData
+/// @brief Cleans the data from the file
 ///
 /// Assuming data is already clean upon arrival 
 /// @note This class is currently not implemented
