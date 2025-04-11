@@ -28,6 +28,6 @@ public:
 	*/
 	DataPoint predict(DataPoint& queryPoint);
 
-}
+};
 
 
