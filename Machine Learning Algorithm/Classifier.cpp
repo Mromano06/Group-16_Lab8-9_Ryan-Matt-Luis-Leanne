@@ -3,10 +3,10 @@
 
 
 void Classifier::train(std::vector<DataPoint>& trainingData) {
-	printf("Abstract class 'Classifier' train() virtual function called");
+	std::cout << "Abstract class 'Classifier' train() virtual function called" <<std::endl;
 }
 DataPoint Classifier::predict(DataPoint& queryPoint) {
-	printf("Abstract class 'Classifier' predict() virtual function called");
+	std::cout << "Abstract class 'Classifier' predict() virtual function called" << std::endl;
 	DataPoint r;
 	return r;
 }

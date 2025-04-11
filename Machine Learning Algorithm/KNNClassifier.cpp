@@ -6,12 +6,12 @@
 ///
 /// 
 void KNNClassifier::train() {
-	printf("KNNClassifier train() function called");
+	std::cout << "KNNClassifier train() function called" << std::endl;
 }
 
 /// @brief 
 ///
 /// 
 void KNNClassifier::predict() {
-	printf("KNNClassifier predict() function called");
+	std::cout<< "KNNClassifier predict() function called" << std::endl;
 }
