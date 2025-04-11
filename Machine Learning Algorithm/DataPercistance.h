@@ -5,8 +5,6 @@
 
 /// @class DataPersistance
 /// @brief Abstract class for reading/writing data
-///
-/// 
 class DataPercistance
 {	
 public:
