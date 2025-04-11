@@ -23,7 +23,7 @@ void CleanData::get() {
 			std::cout << "Invalid input. Please enter two numeric values separated by spaces." << std::endl;
 		} 
 		else {
-			invalid = false; //valid input, (i know while true isnt the best but brain no work right now)
+			invalid = false; //valid input, (i know while true isnt the best but brain no work right now) // matt brain work dw
 		}
 	}
 	max = maxV;	//set max value
