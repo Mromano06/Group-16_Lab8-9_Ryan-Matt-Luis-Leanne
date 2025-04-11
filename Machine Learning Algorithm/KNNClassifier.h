@@ -3,17 +3,17 @@
 #include "Classifier.h"
 
 /// @class KNNClassifier
-/// @brief 
+/// @brief Unimplemented class
 ///
 /// 
 class KNNClassifier :public Classifier
 {
-	/// @brief 
+	/// @brief Unimplemented train function
 	///
 	/// 
 	void train();
 
-	/// @brief 
+	/// @brief Unimplemented predict function
 	///
 	/// 
 	void predict();
