@@ -4,13 +4,13 @@
 #include <vector>
 #include <iostream>
 
-/**
+
 /// @class AnotherClassifier
 /// @brief A placeholder class that implements the Classifier interface. Is not functional.
-*
-* This class is currently used to represent polymorphism and abstraction.
-* All functions only print that they are not implemented
-*/
+///
+/// This class is currently used to represent polymorphism and abstraction.
+/// All functions only print that they are not implemented
+
 class AnotherClassifier : public Classifier {
 public:
 	/**
