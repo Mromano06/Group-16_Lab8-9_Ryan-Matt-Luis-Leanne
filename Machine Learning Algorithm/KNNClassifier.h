@@ -2,6 +2,7 @@
 
 #include "Classifier.h"
 
+/// @class KNNClassifier
 /// @brief 
 ///
 /// 
